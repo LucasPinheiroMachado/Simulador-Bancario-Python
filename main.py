@@ -1,19 +1,15 @@
-# Importando as classes
 from classes.Cliente import Cliente
 from classes.Conta import ContaCorrente, ContaPoupanca
 from classes.Banco import Banco
 
-# Criando contas
 conta_corrente1 = ContaCorrente("001", 12345, 2000.0)
 conta_poupanca1 = ContaPoupanca("001", 54321, 3000.0)
 conta_corrente2 = ContaCorrente("002", 67890, 1000.0)
 
-# Criando clientes
 cliente1 = Cliente("João", 30, conta_corrente1)
 cliente2 = Cliente("Maria", 25, conta_poupanca1)
 cliente3 = Cliente("Carlos", 40, conta_corrente2)
 
-# Criando o banco
 banco = Banco(contas=[conta_corrente1, conta_poupanca1, conta_corrente2], 
               clientes=[cliente1, cliente2, cliente3])
 
